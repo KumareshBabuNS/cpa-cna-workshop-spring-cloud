@@ -1,0 +1,12 @@
+---
+eureka:
+  instance:
+    hostname: localhost
+    non-secure-port: 8090
+  client:
+    registerWithEureka: true
+    service-url:
+      defaultZone: http://localhost:8761/eureka/
+      
+server:
+  port: 8090

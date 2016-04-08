@@ -1,0 +1,6 @@
+**/target
+*.jar
+**/.mvn
+**/.project
+**/.classpath
+**/.settings
