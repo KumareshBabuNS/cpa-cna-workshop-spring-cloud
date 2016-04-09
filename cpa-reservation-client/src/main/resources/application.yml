@@ -1,8 +1,8 @@
 ---
 eureka:
-  instance:
-    hostname: localhost
-    non-secure-port: 8090
+  #instance:
+    #hostname: localhost
+    #non-secure-port: ${server.port}
   client:
     registerWithEureka: true
     service-url:
