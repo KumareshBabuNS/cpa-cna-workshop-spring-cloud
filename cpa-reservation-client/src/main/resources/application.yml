@@ -1,12 +1,14 @@
 ---
 eureka:
   #instance:
+    #preferIPAddress: true
     #hostname: localhost
     #non-secure-port: ${server.port}
   client:
-    registerWithEureka: true
-    service-url:
+    #registerWithEureka: true
+    serviceUrl:
       defaultZone: http://localhost:8761/eureka/
+      
       
 server:
   port: 8090

@@ -1,11 +1,14 @@
 ---
 eureka:
   #instance:
+  #  preferIPAddress: true
+  #instance:
   #  hostname: localhost
   #  non-secure-port: ${server.port}      
   client:
-    registerWithEureka: true
-    service-url:
+    #registerWithEureka: true
+    #service-url:
+    serviceUrl:
       defaultZone: http://localhost:8761/eureka/
 
 server:
@@ -15,3 +18,5 @@ spring:
   jpa:
     generate-ddl: true
       
+hello:
+  message: Hello from application.yml
